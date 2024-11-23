@@ -9,7 +9,6 @@ app.use(bodyParse.json());
 
 moongose
   .connect("mongodb://localhost:27017/institute-registration", {
-    useNewUrlParse: true,
     useUnifiedTopology: true,
   })
   .then(() => {

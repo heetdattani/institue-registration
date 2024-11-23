@@ -48,6 +48,7 @@ const institueSchema = new Schema({
       required: function () {
         return this.institueType === "College";
       },
+      enum: ["Bachelor", "Master"],
     },
   },
   playHouseDetails: {
